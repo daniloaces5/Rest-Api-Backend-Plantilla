@@ -1,0 +1,15 @@
+import js from '@eslint/js';
+
+export default [
+  js.configs.recommended,
+  {
+    languageOptions: {
+      ecmaVersion: 2023,
+      sourceType: 'module'
+    },
+    rules: {
+      'no-console': 'warn',
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_' }]
+    }
+  }
+];
